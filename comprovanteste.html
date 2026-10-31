@@ -139,6 +139,34 @@
       color: #4b5563;
       margin-top: 20px;
       line-height: 1.4;
+      margin-bottom: 24px;
+    }
+
+    /* Estilização do Botão de Login */
+    .btn-login-container {
+      margin-top: 16px;
+    }
+
+    .btn-login {
+      display: block;
+      width: 100%;
+      padding: 12px 16px;
+      background-color: #0038a8;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .btn-login:hover {
+      background-color: #002b80;
+    }
+
+    .btn-login:active {
+      transform: scale(0.99);
     }
   </style>
 </head>
@@ -153,8 +181,8 @@
     </div>
 
     <div class="header-title">Comprovante BB</div>
-    <div class="amount">R$ 9.250,00</div>
-    <div class="timestamp">31/08/2026 às 16:38:26</div>
+    <div class="amount">R$ 250,00</div>
+    <div class="timestamp">27/08/2026 às 16:38:26</div>
 
     <div class="status-badge">
       <svg viewBox="0 0 24 24">
@@ -264,6 +292,11 @@
     <div class="tagline">
       Esse é o novo comprovante do Banco do Brasil.<br>
       Mais clareza nas informações, facilitando sua vida.
+    </div>
+
+    <!-- Botão para login.html -->
+    <div class="btn-login-container">
+      <a href="login.html" class="btn-login">Ir para o Login</a>
     </div>
   </div>
 
