@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprovante BB - Pix</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f5;
+      display: flex;
+      justify-content: center;
+      padding: 20px 10px;
+      color: #2b2b2b;
+    }
+
+    .container {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 400px;
+      padding: 28px 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    /* Logo Banco do Brasil */
+    .logo-bb {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .logo-bb svg {
+      width: 38px;
+      height: 38px;
+      fill: #0038a8; /* Cor institucional do Banco do Brasil */
+    }
+
+    .header-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 6px;
+    }
+
+    .amount {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0038a8;
+      margin-bottom: 4px;
+    }
+
+    .timestamp {
+      font-size: 12px;
+      color: #666666;
+      margin-bottom: 12px;
+    }
+
+    .status-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 24px;
+    }
+
+    .status-badge svg {
+      width: 20px;
+      height: 20px;
+      fill: #228b22;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 16px 0;
+    }
+
+    .section {
+      margin-bottom: 16px;
+    }
+
+    .section-header {
+      font-size: 13px;
+      font-weight: 600;
+      color: #4b5563;
+      margin-bottom: 4px;
+    }
+
+    .section-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .field {
+      margin-bottom: 8px;
+    }
+
+    .field-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #4b5563;
+    }
+
+    .field-value {
+      font-size: 13px;
+      color: #6b7280;
+      word-break: break-all;
+    }
+
+    .info-footer {
+      font-size: 11px;
+      color: #4b5563;
+      line-height: 1.45;
+    }
+
+    .info-footer p {
+      margin-bottom: 3px;
+    }
+
+    .info-footer a {
+      color: #4b5563;
+      text-decoration: underline;
+    }
+
+    .tagline {
+      font-size: 12px;
+      color: #4b5563;
+      margin-top: 20px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Logo BB -->
+    <div class="logo-bb">
+      <svg viewBox="0 0 100 100">
+        <path d="M25,15 L75,15 L75,35 L45,35 L45,45 L75,45 L75,85 L25,85 L25,65 L55,65 L55,55 L25,55 Z" fill="#0038a8"/>
+      </svg>
+    </div>
+
+    <div class="header-title">Comprovante BB</div>
+    <div class="amount">R$ 9.250,00</div>
+    <div class="timestamp">31/08/2026 às 16:38:26</div>
+
+    <div class="status-badge">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+      </svg>
+      <span>Pix Enviado</span>
+    </div>
+
+    <hr>
+
+    <!-- Recebedor -->
+    <div class="section">
+      <div class="section-header">Recebedor</div>
+      <div class="section-name">Daiana Q S Cristovao</div>
+      
+      <div class="field">
+        <div class="field-label">CPF</div>
+        <div class="field-value">***.336.387-**</div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Agência</div>
+        <div class="field-value">0001</div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Conta</div>
+        <div class="field-value">765120920</div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Instituição</div>
+        <div class="field-value">18236120 NU PAGAMENTOS - IP</div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Tipo de conta</div>
+        <div class="field-value">Conta Pagamento</div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Chave Pix</div>
+        <div class="field-value">09133638713</div>
+      </div>
+    </div>
+
+    <!-- Pagador -->
+    <div class="section">
+      <div class="section-header">Pagador</div>
+      <div class="section-name">Benjamim Emerick Oliveira</div>
+      
+      <div class="field">
+        <div class="field-label">CPF</div>
+        <div class="field-value">***.091.908-**</div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Agência</div>
+        <div class="field-value">0018-3</div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Conta</div>
+        <div class="field-value">510797-0</div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Instituição</div>
+        <div class="field-value">00000000 BCO DO BRASIL S.A.</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Informações adicionais -->
+    <div class="section">
+      <div class="field-label" style="font-size: 14px; margin-bottom: 4px;">Informações adicionais</div>
+      <div class="field-value">ID: E0000000020260827193744572990595</div>
+    </div>
+
+    <hr>
+
+    <!-- Rodapé legal/autenticação -->
+    <div class="info-footer">
+      <p>Comprovante emitido em: 27/08/2026 às 16:38:35</p>
+      <p>Documento: 000000000082708</p>
+      <p>Autenticação SISBB: 8.690.72A.A75.674.FFF</p>
+    </div>
+
+    <hr>
+
+    <!-- Central de Relacionamento -->
+    <div class="info-footer">
+      <p>Central de Relacionamento:</p>
+      <p>4004 0001 Capitais e regiões metropolitanas.</p>
+      <p>0800 729 0001 Demais localidades.</p>
+      <p>SAC: 0800 729 0722</p>
+      <p>Ouvidoria: 0800 729 5678</p>
+      <p>Atendimento a deficientes auditivos ou de fala:</p>
+      <p>0800 729 0088</p>
+      <p>Canal de ética e denúncias:</p>
+      <p><a href="https://canalconfidencial.com.br/bancodobrasil/" target="_blank">https://canalconfidencial.com.br/bancodobrasil/</a></p>
+    </div>
+
+    <hr>
+
+    <div class="tagline">
+      Esse é o novo comprovante do Banco do Brasil.<br>
+      Mais clareza nas informações, facilitando sua vida.
+    </div>
+  </div>
+
+</body>
+</html>
